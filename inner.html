@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+      <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -10,6 +11,8 @@
 	  <div class="container">
 			<nav class="main-navigation">
 				<ul>
+                   <li> <img src="/img/logo.png" wigth="138px" height="70px">
+                       </li>
 				  <li>
 				    <a href="#">Информация</a>
 				  </li>
@@ -24,15 +27,11 @@
 				  </li>
 				</ul>
 			</nav>
-				<div class="main-logo">
-					<a class="logo" href="#">Logo</a>
-				</div>
 		</div>
 	</header>
 	  <main class="container">
-		<table class="container">
-              <tr>
-                <td class="options">	     
+          <img src="/img/filter background.jpg" wigth="1200px" height="565px">
+              <div class="options">	     
 				 <form action="#" method="post" class="infrastructure">
 					<p>Инфраструктура:</p>
 					  <input type="checkbox" name="infrastructure" id="infrastructure1" checked>
@@ -45,9 +44,9 @@
 						<label for="infrastructure3">Wi-Fi
 						</label><br>
 				 </form>
-		        </td>
-				<td class="options" colspan="2">	     
-				 <form action="#" method="post" class="infrastructure">
+            </div>
+				<div>
+                    <form action="#" method="post" class="infrastructure">
 					<p>Тип жилья:</p>
 					  <input type="checkbox" name="infrastructure" id="infrastructure1" checked>
 						<label for="infrastructure1">Гостиница
@@ -59,26 +58,20 @@
 						<label for="infrastructure3">Апартаменты
 						</label><br>
 				 </form>
-		        </td>
-				<!--не сообразил, как правильно описать этот бегунок с ценой  -->
-				<td class="price" colspan="3">	     
+            </div>
+				<div class="price-crecker"></div>
+				<div class="price" >
 					<h3>Стоимость в сутки(р):</h3>
 					  <div>
-					    <table>
-						  <tr>
-						    <td>
+					    
 							<a class="price" href="#">от 0</a>
-							</td>
-							<td>
+							
 							<a class="price" href="#">до 3000</a>
-							</td>
-							</tr>
-						</table>
+							
 					  </div>
 					  <input type="button" value="Показать">
-		        </td>
-              </tr> 
-			</table>
+		        </div>
+             
 		<div class="search-results"> 
 		  <h3>Найдено:3</h3>
 		  <span> Сортировка:</span>
@@ -87,72 +80,30 @@
 		  <a class="sort" href="#">По рейтингу</a>
 		</div><!--можно ли стрелочки сделать в CSS?  -->
 		<div class="hotels">
-		<img src="#" width="#" height="#" alt="Amara resort & spa">
+		<img src="/img/hotel-1.jpg" width="135" height="90" alt="Amara resort & spa">
 		<h3>Amara resort & spa</h3>
-		  <table>
-		    <tr>
-			  <td>
 			   <span>Гостиница</span>
-			  </td>
-			  <td>
 			   <span>от 3500 Р.</span>
-			  </td>
-			</tr>
-			<tr>
-			  <td>
 			    <a class="info-btn" href="#">Подробнее</a>
-			  </td>
-			  <td>
 			    <a class="info-btn" href="#">Забронировать</a>
-			  </td>
-			</tr>
-		  </table>
 		  <span>Рейтинг: 8,5</span>
 		</div>
 		<div class="hotels">
-		<img src="#" width="#" height="#" alt="Desert quail inn">
+		<img src="/img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">
 		<h3>Desert quail inn</h3>
-		  <table>
-		    <tr>
-			  <td>
 			   <span>Мотель</span>
-			  </td>
-			  <td>
 			   <span>от 2000 Р.</span>
-			  </td>
-			</tr>
-			<tr>
-			  <td>
 			    <a class="info-btn" href="#">Подробнее</a>
-			  </td>
-			  <td>
 			    <a class="info-btn" href="#">Забронировать</a>
-			  </td>
-			</tr>
-		  </table>
 		  <span>Рейтинг: 8,9</span>
 		</div>
 		<div class="hotels">
-		<img src="#" width="#" height="#" alt="Villas at poco diablo">
+		<img src="/img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">
 		<h3>Villas at poco diablo</h3>
-		  <table>
-		    <tr>
-			  <td>
 			   <span>Апартаменты</span>
-			  </td>
-			  <td>
 			   <span>от 4000 Р.</span>
-			  </td>
-			</tr>
-			<tr>
-			  <td>
 			    <a class="info-btn" href="#">Подробнее</a>
-			  </td>
-			  <td>
 			    <a class="info-btn" href="#">Забронировать</a>
-			  </td>
-			</tr>
-		  </table>
 		  <span>Рейтинг: 9,2</span>
 		</div>	  
 		<footer class="main-footer">
@@ -160,15 +111,15 @@
         <section class="footer-link">
 			<a href="#">#visitsedona</a>
         </section>
-        <section class="footer-social">
+        <div class="footer-social">
            
-          <a class="social-btn social-btn-vk" href="#">
-          <a class="social-btn social-btn-fb" href="#">
-          <a class="social-btn social-btn-youtube" href="#">
-        </section>
+            <a class="social-btn social-btn-tw" href="/img/tw.png" width="17" height="15" alt="tw"></a>
+          <a class="social-btn social-btn-fb" href="img/fb.png" width="10" height="19" alt="fb"></a>
+          <a class="social-btn social-btn-youtube" href="img/youtube.png" width="20" height="16" alt="youtube"></a>
+              </div>
         <section class="footer-copyright">
           
-          <a class="btn" href="https://htmlacademy.ru">
+          <a class="btn" href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
