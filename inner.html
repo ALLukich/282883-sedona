@@ -6,19 +6,22 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
+<!--бегунок надо делать в зависимости от того, где хранятся данные, либо инпут тайп рейндж, либо инпут тайп текст а ползунки имитируем с помощью дивов-->
+      <!--кнопки сортировки по цене итд надо размечать как ул-ли, а пункты надо отмечать как ссылки, треугольнички надо размечать как спаны, т.к. это просто индикаторы(декоративные)  -->
     <header class="main-header">
 	  <div class="container">
 			<nav class="main-navigation">
 				<ul>
-                   <li> <img src="/img/logo.png" wigth="138px" height="70px">
-                       </li>
-				  <li>
-				    <a href="#">Информация</a>
-				  </li>
+				   
 				  <li>
 				    <a href="#">Фото и видео</a>
 				  </li>
+                    <li>
+				    <a href="#">Карта штата</a>
+				  </li>
+                    <li>
+					<a class="logo" href="/img/logo.png" width="138" height="70">logo</a>
+				</li>
 				  <li>
 				    <a href="#">Карта штата</a>
 				  </li>
@@ -27,10 +30,13 @@
 				  </li>
 				</ul>
 			</nav>
+				
 		</div>
 	</header>
-	  <main class="container">
-          <img src="/img/filter background.jpg" wigth="1200px" height="565px">
+	  <div class="container">
+          <!--<div class="form-font">
+          <img src="/img/filter background.jpg" wigth="1200px" height="565px"alt="фоновая картинка">
+              </div>-->
               <div class="options">	     
 				 <form action="#" method="post" class="infrastructure">
 					<p>Инфраструктура:</p>
@@ -45,7 +51,7 @@
 						</label><br>
 				 </form>
             </div>
-				<div>
+				<div class="infrastructure">
                     <form action="#" method="post" class="infrastructure">
 					<p>Тип жилья:</p>
 					  <input type="checkbox" name="infrastructure" id="infrastructure1" checked>
@@ -59,6 +65,7 @@
 						</label><br>
 				 </form>
             </div>
+          <div class="price-block">
 				<div class="price-crecker"></div>
 				<div class="price" >
 					<h3>Стоимость в сутки(р):</h3>
@@ -71,15 +78,22 @@
 					  </div>
 					  <input type="button" value="Показать">
 		        </div>
-             
+              </div>
+          </div>
+      <div class="container">
 		<div class="search-results"> 
-		  <h3>Найдено:3</h3>
-		  <span> Сортировка:</span>
-		  <a class="sort" href="#">По цене</a>
-		  <a class="sort" href="#">По типу</a>
-		  <a class="sort" href="#">По рейтингу</a>
+            <ul>
+		  <li>Найдено:3</li>
+		  <li> Сортировка:</li>
+		  <li><a class="sort" href="#">По цене</a></li>
+		  <li><a class="sort" href="#">По типу</a></li>
+		  <li><a class="sort" href="#">По рейтингу</a></li>
+              <li>стрелочка</li>
+                  <li>стрелочка</li>
+            </ul>
 		</div><!--можно ли стрелочки сделать в CSS?  -->
-		<div class="hotels">
+          <div class="container">
+		<div class="hotel1">
 		<img src="/img/hotel-1.jpg" width="135" height="90" alt="Amara resort & spa">
 		<h3>Amara resort & spa</h3>
 			   <span>Гостиница</span>
@@ -88,7 +102,7 @@
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 8,5</span>
 		</div>
-		<div class="hotels">
+		<div class="hotel2">
 		<img src="/img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">
 		<h3>Desert quail inn</h3>
 			   <span>Мотель</span>
@@ -97,7 +111,7 @@
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 8,9</span>
 		</div>
-		<div class="hotels">
+		<div class="hotel3">
 		<img src="/img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">
 		<h3>Villas at poco diablo</h3>
 			   <span>Апартаменты</span>
@@ -105,26 +119,26 @@
 			    <a class="info-btn" href="#">Подробнее</a>
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 9,2</span>
-		</div>	  
+		</div>	
+          </div>
 		<footer class="main-footer">
-      <div class="container">
+      
         <section class="footer-link">
 			<a href="#">#visitsedona</a>
         </section>
-        <div class="footer-social">
+        
            
-            <a class="social-btn social-btn-tw" href="/img/tw.png" width="17" height="15" alt="tw"></a>
-          <a class="social-btn social-btn-fb" href="img/fb.png" width="10" height="19" alt="fb"></a>
-          <a class="social-btn social-btn-youtube" href="img/youtube.png" width="20" height="16" alt="youtube"></a>
-              </div>
+            <a class="social-btn social-btn-tw" href="/img/tw.png" width="17" height="15" alt="tw">vk</a>
+          <a class="social-btn social-btn-fb" href="img/fb.png" width="10" height="19" alt="fb">fb</a>
+          <a class="social-btn social-btn-youtube" href="img/youtube.png" width="20" height="16" alt="youtube">youtube</a>
         <section class="footer-copyright">
           
-          <a class="btn" href="https://htmlacademy.ru"></a>
+          <a class="btn" href="https://htmlacademy.ru">academy</a>
         </section>
-      </div>
+      
     </footer>
 		
 		
-	  </main>
+	  </div>
   </body>
 </html>
