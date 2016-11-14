@@ -2,55 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-      <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 <!--бегунок надо делать в зависимости от того, где хранятся данные, либо инпут тайп рейндж, либо инпут тайп текст а ползунки имитируем с помощью дивов-->
       <!--кнопки сортировки по цене итд надо размечать как ул-ли, а пункты надо отмечать как ссылки, треугольнички надо размечать как спаны, т.к. это просто индикаторы(декоративные)  -->
-    <header class="main-header">
-	  <div class="container">
-			<nav class="main-navigation">
-				<ul>
-				   
-				  <li>
-				    <a href="#">Фото и видео</a>
-				  </li>
+   <header class="main-header">
+        <div class="container">
+            <div class="header">
+            <nav class="main-navigation">
+                <ul>
                     <li>
-				    <a href="#">Карта штата</a>
-				  </li>
+                        <a href="#">Информация</a>
                     <li>
-					<a class="logo" href="/img/logo.png" width="138" height="70">logo</a>
-				</li>
-				  <li>
-				    <a href="#">Карта штата</a>
-				  </li>
-				  <li>
-				    <a href="#">Гостиницы</a>
-				  </li>
-				</ul>
-			</nav>
-				
-		</div>
-	</header>
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    
+                   <li>
+                        <img src="img/logo.png" width="138" height="70">
+                    </li>
+                    <li>
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+                </div>
+        </div>
+    </header>
+     
+
+
+      
 	  <div class="container">
-          <!--<div class="form-font">
-          <img src="/img/filter background.jpg" wigth="1200px" height="565px"alt="фоновая картинка">
-              </div>-->
-              <div class="options">	     
+           <div class="parent"> 
+               <div class="form" background-image:url(img/filter background.jpg)>
+    <div class="children1">
+        <div class="options">	     
 				 <form action="#" method="post" class="infrastructure">
-					<p>Инфраструктура:</p>
-					  <input type="checkbox" name="infrastructure" id="infrastructure1" checked>
+                     <div class="check>"><p>Инфраструктура:</p></div>
+					  <div class="check>"><input type="checkbox" name="infrastructure" id="infrastructure1" checked>
 						<label for="infrastructure1">Бассейн
-						</label><br>
-						<input type="checkbox" name="infrastructure" id="infrastructure2">
+						</label></div>
+						<div class="check>"><input type="checkbox" name="infrastructure" id="infrastructure2">
 						<label for="infrastructure2">Парковка
-						</label><br>
-						<input type="checkbox" name="infrastructure" id="infrastructure3">
+						</label></div>
+						<div class="check>"><input type="checkbox" name="infrastructure" id="infrastructure3">
 						<label for="infrastructure3">Wi-Fi
-						</label><br>
+						</label></div>
 				 </form>
             </div>
+               </div>
+    <div class="children1">
+        <div class="options">	 
 				<div class="infrastructure">
                     <form action="#" method="post" class="infrastructure">
 					<p>Тип жилья:</p>
@@ -65,22 +73,27 @@
 						</label><br>
 				 </form>
             </div>
-          <div class="price-block">
+              </div>
+               </div>
+          <div class="children2">
+              <div class="price-block">
 				<div class="price-crecker"></div>
 				<div class="price" >
 					<h3>Стоимость в сутки(р):</h3>
 					  <div>
-					    
 							<a class="price" href="#">от 0</a>
-							
 							<a class="price" href="#">до 3000</a>
-							
 					  </div>
 					  <input type="button" value="Показать">
 		        </div>
               </div>
+                   </div>   
           </div>
-      <div class="container">
+              </div>
+
+          
+          
+      
 		<div class="search-results"> 
             <ul>
 		  <li>Найдено:3</li>
@@ -92,9 +105,9 @@
                   <li>стрелочка</li>
             </ul>
 		</div><!--можно ли стрелочки сделать в CSS?  -->
-          <div class="container">
-		<div class="hotel1">
-		<img src="/img/hotel-1.jpg" width="135" height="90" alt="Amara resort & spa">
+       <div class="hotels">  
+		<div class="hotel">
+		<img src="img/hotel-1.jpg" width="135" height="90" alt="Amara resort & spa">
 		<h3>Amara resort & spa</h3>
 			   <span>Гостиница</span>
 			   <span>от 3500 Р.</span>
@@ -102,8 +115,8 @@
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 8,5</span>
 		</div>
-		<div class="hotel2">
-		<img src="/img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">
+		<div class="hotel">
+		<img src="img/hotel-2.jpg" width="135" height="90" alt="Desert quail inn">
 		<h3>Desert quail inn</h3>
 			   <span>Мотель</span>
 			   <span>от 2000 Р.</span>
@@ -111,8 +124,8 @@
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 8,9</span>
 		</div>
-		<div class="hotel3">
-		<img src="/img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">
+		<div class="hotel">
+		<img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at poco diablo">
 		<h3>Villas at poco diablo</h3>
 			   <span>Апартаменты</span>
 			   <span>от 4000 Р.</span>
@@ -120,23 +133,22 @@
 			    <a class="info-btn" href="#">Забронировать</a>
 		  <span>Рейтинг: 9,2</span>
 		</div>	
-          </div>
-		<footer class="main-footer">
-      
-        <section class="footer-link">
-			<a href="#">#visitsedona</a>
-        </section>
-        
-           
-            <a class="social-btn social-btn-tw" href="/img/tw.png" width="17" height="15" alt="tw">vk</a>
-          <a class="social-btn social-btn-fb" href="img/fb.png" width="10" height="19" alt="fb">fb</a>
-          <a class="social-btn social-btn-youtube" href="img/youtube.png" width="20" height="16" alt="youtube">youtube</a>
-        <section class="footer-copyright">
+           </div> 
           
-          <a class="btn" href="https://htmlacademy.ru">academy</a>
-        </section>
-      
-    </footer>
+          
+		<div class="foter">
+            <div class="item">#visitsedona</div>
+            <div class="item">
+                <a class="social-btn social-btn-tw" href="img/tw.png" width="17" height="15" alt="tw">fb</a>
+                <a class="social-btn social-btn-fb" href="img/fb.png" width="10" height="19" alt="fb">tw</a>
+            <a class="social-btn social-btn-youtube" href="img/youtube.png" width="20" height="16" alt="youtube">youtube</a>
+                <a class="social social-fb" href="http://www.facebook.com/htmlacademy"></a>
+            </div>
+            <div class="item">
+                website by
+                <img src="img/academy.png" alt="">
+            </div>
+        </div>
 		
 		
 	  </div>

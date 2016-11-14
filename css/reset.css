@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*-webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
+}
+
+.cf:after,
+.cf:before {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.cf:after {
+    clear: both
+}
+
+.cf {
+    *zoom: 1
+}
