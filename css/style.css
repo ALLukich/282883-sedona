@@ -1,57 +1,51 @@
+
+
 body {
     
     color:#333333;
     font-weight:Bold;
-    font-family: "PT Sans", serif;
+    font-family: 'PT Sans', sans-serif;
     
 }
 
-/*h1 {
-    font-size: 30px;
-    line-height:42px;
-    color:#000000;
-    font-weight:Bold;
-    font-family: "PT Sans Narrow", serif;
-}
-h2 {
-    font-size: 21px;
-    line-height:26px;
-    color:#000000;
-    font-weight:Bold;
-    font-family: "PT Sans", serif;
-}
-h3 {
-    font-size: 21px;
-    line-height:21px;
-    color:#000000;
-    font-weight:Bold;
-    font-family: "PT Sans", serif;
-}*/
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
     text-align: center;  
-    background-color: coral;
     text-transform: uppercase;
 }
 .header{
     background-color: #ffffff;
     font-size: 0;
 }
+.header:before{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 138px;
+    height: 70px;
+    top: 0px;
+    left: 50%;
+    margin-left: -69px;
+    background: url('../img/logo.png')no-repeat center center;
+}
 .main-navigation li{
-     display:inline-block;
+    display:inline-block;
+    vertical-align: top;
     width: 240px;
     font-size: 14px;
-    
-    padding-top: 22px;
-
-    padding-bottom: 22px;
+    height: 55px;
+    line-height: 55px;
 }
 .main-navigation a{
     text-decoration: none;
     color: black;
-    line-height: 14px;
-    
+    line-height: 14px;   
+}
+.main-navigation img {
+    position: absolute;
+top:10px; left:680px;
     
 }
 .index-logo{
@@ -60,26 +54,6 @@ margin-right: auto;
 
 }    
 
-/*.price-block{
-    float:right;
-    min-height: 215px;
-    width:330px;
-    margin-right: 70px;
-}
-.search-results{
-    min-height: 85px;
-    clear: both;
-    background-color: blueviolet;
-}
-.search-results li{
-    display:inline-block;
-    padding-top: 30px;
-    margin-left: 40px;
-    margin-right:40px;
-    padding-bottom: 30px;
-}
-
-*/
 
 .index{
     background: #FFF;
@@ -181,23 +155,139 @@ height: 216px;
      line-height:24px;
     padding-bottom: 140px;
 }
+
+.form_search{
+    
+    background: #FFF;
+}
 .booking{
     margin: 0 auto;
-    width: 576px;
-    height: 474px;
-    background-color: aqua;
+    width: 568px;
+    min-height: 482px;
+    background-color: white;
 }
 .booking .find{
-    height:86px;
+    min-height:86px;
+    text-align: center;
     background-color: #766357;
+    border: none;
 }
-.booking .text{
-    padding-top: 35px;
-    color: white
+.booking .find strong{
+    display: block;
+ padding-top:35px;
+    color: white;
+    font-size: 21px;
 }
+.search-form{
+    padding: 55px;
+    font-size: 0;
+}
+/*.booking .search{
+    background-color: white;
+    min-height: 40px;
+    margin-bottom: 30px;
+    width: 458px;
+    vertical-align: center;
+}
+
+
+.booking .search .input{
+    float: right;
+    min-height: 38px;
+    width:346px;
+    background: #f2f2f2;
+}
+.search input{
+    min-height: 38px;
+    width:308px;
+    background: #f2f2f2;
+    border:none;
+    
+}
+.search button{
+    vertical-align: middle;
+    border:none;
+}
+.booking .search label{
+   }*/
 .booking .search{
     background-color: white;
-    height: 97px;
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    padding-bottom: 30px
+}
+
+
+.booking .search .input{
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 38px;
+    width:346px;
+    background: #f2f2f2;
+}
+.search input{
+    height: 38px;
+    width:308px;
+    background: #f2f2f2;
+    border:none;
+     display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    text-align: left;
+
+    text-transform: uppercase;
+   font-family: 'PT Sans', sans-serif;
+    color: #000;
+    font-size: 14px;
+}
+/*как убрать границу у картинки?*/
+}
+.booking .search label{
+   }
+.wrap_search{
+    font-size: 0;
+}
+
+.wrap_search .search{
+    display: inline-block;
+    font-size: 14px;
+    width: 50%;
+}
+
+.booking .search .number{
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.booking .search .number span,
+.booking .search .number input[type="text"]{
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+   background: #f2f2f2;
+    color: #000;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+.booking .search .number input[type="text"]{
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+}
+.booking input:last-child{
+    display: inline-block;
+    width:458px;
+    height:58px;
+    color:white;
+    background-color:#81b3d2;
+    border:none;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size:21px;
+    margin-top: 54px;
 }
 .foter{
     font-size: 0;
@@ -205,11 +295,12 @@ height: 216px;
 }
 .foter .item{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 33.333333%;
     font-size: 18px;
     height: 120px;
     line-height: 120px;
+    background-image: url("img/tw.png")
 }
 .foter .item a{
     display: inline-block;
@@ -217,15 +308,19 @@ height: 216px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #81b3d2 url("img/tw.png") no-repeat;
+    background-color: #81b3d2;
     color: #FFF;
     text-decoration: none;
     vertical-align: middle;
+    background-image: url('img/tw.png') no-repeat;
 }
 }
 .foter .item img{
     display: inline-block;
-    vertical-align: middle;
+}
+.foter .item .text{
+    display: inline-block;
+    
 }
 
 opacity: 0.3;opacity: 0.3;opacity: 0.3;
@@ -250,20 +345,35 @@ height:217px;
 
 .parent{
     font-size: 0;
-    background: #bdc3c7 url("/img/hotel-1.jpg") no-repeat;
+    background-image:  url('img/filter background.jpg') no-repeat;
+    background-color: #bdc3c7;
 }
 .children1{
-    height:217px;
-    width:300px;
+    min-height: 217px;
+    width:240px;
     display: inline-block;
-    vertical-align: top;
+    text-align: left;
     font-size: 14px;
+    margin-left: 70px;
+    padding-top: 30px;
 }
+
 .children1 label{
     display: inline-block;
     padding-top: 20px;
-    
-    
+}
+.children3{
+    min-height: 217px;
+    width:288px;
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+.children3 label{
+    display: inline-block;
+    padding-top: 20px;
 }
 .children2{
     height:217px;
@@ -273,17 +383,359 @@ height:217px;
     font-size: 14px;
 }
 
-.search-results{
-    height:87px;
-    background-color: white;
-}
-.search-results li{
-    display: inline-block;
-    padding-top: 40px;
-    padding-left: 30px;
-    
-}
+
 .hotel{
     height:150px;
      background-color: white;
+}
+
+/*.price-block{
+    float:right;
+    min-height: 215px;
+    width:330px;
+    margin-right: 70px;
+}
+.search-results{
+    min-height: 85px;
+    clear: both;
+    background-color: blueviolet;
+}
+.search-results li{
+    display:inline-block;
+    padding-top: 30px;
+    margin-left: 40px;
+    margin-right:40px;
+    padding-bottom: 30px;
+}
+
+*/
+/*стилизация сложного фильтра*/
+.filter-range {
+  width: 330px;
+  margin: 50px auto; 
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+    text-align: left;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+height: 100%;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 163px;
+  padding-left: 50px;
+    
+    
+    
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 22px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+/*конец стилизации сложного фильтра*/
+.arrow-up{
+  width: 10px;
+  height: 10px;
+  background: blue;
+}
+search-results .arrow-down{
+  width: 10px;
+  height: 10px;
+  background: blue;
+}
+
+    
+}
+.search-results{
+    min-height:87px;
+    background-color: white;
+    font-size:0px;
+    vertical-align: middle;
+}
+.search-results li{
+  list-style-type:none;
+    display: inline-block;
+
+    font-size:14px;
+}
+.find-count{
+    font-size: 16px;
+    padding-left: 70px;
+    padding-right:50px;
+    display: inline-block;}
+.hotel{
+    height:150px;
+}
+.hotel-img{
+    display: inline-block;
+    
+}
+.hotel-txt{
+    display: inline-block;
+    width:300px;
+    height:150px;
+    vertical-align: middle;
+}
+.hotel-rate{
+    display: inline-block;
+}
+
+
+.some_line{
+    font-size: 0;
+    padding-left:72px;
+    padding-right: 72px;
+    min-height: :550px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.some_line > div{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.some_line .picture{
+    width: 135px;
+    
+}
+
+.some_line .info{
+    width: calc(100% - 135px);
+    padding-left: 30px;
+}
+
+.some_line .title{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.some_line .title strong{
+    font-size:21px;
+}
+.some_line .title strong:hover{
+color:#81b3d2;
+    cursor: pointer;
+}
+.some_line .block_stars{
+    float: right;
+    color: #81b3d2;
+}
+.some_line .price{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size:14px;
+    font-family: "PT-Sans Regular";
+    
+}
+
+.some_line .price span{
+        margin-left: 40px;
+    }
+
+.some_line .btns{
+    display: inline-block;
+    width: 100%;
+}
+
+.some_line .block_btns{
+    float: left;
+    
+    
+}
+ .some_line .block_btns .btn-blue  {
+     padding: 8px 17px 8px 17px;
+    width: 110px;
+    height:27px;
+    background-color: #81b3d2;
+     text-decoration: none;
+     color:#ffffff;
+    766357
+    
+}
+.some_line .block_btns .btn-blue:hover {
+  color: #ffffff;
+
+  background: #669ec0;
+}
+.some_line .block_btns .btn-brown  {
+     padding: 8px 17px 8px 17px;
+    width: 110px;
+    height:27px;
+    background-color: #766357;
+     text-decoration: none;
+     color:#ffffff;
+    margin-left:6px;
+}
+.some_line .block_btns .btn-brown:hover{
+    color: #ffffff;
+
+  background: #604e43;
+}
+.some_line  .rate{
+padding: 8px 17px 8px 17px;
+    background-color:#f2f2f2;
+    font-family: "PT Sans Regular";
+    font-size: 14px;
+    color:#b9b9b9;
+    
+    
+}
+.some_line .rate{
+    float: right;
+}
+
+.search-results{
+    background-color: #ffffff;
+    
+    min-height: 87px;
+}
+
+.sort {
+    float:left;
+    font-size: 14px;
+    margin-top:33px;
+    margin-left: 73px;
+ text-align: center;
+    
+}
+.sort span { 
+    padding-left: 50px;
+    font-size: 12px;
+    
+}
+.sort strong {
+     font-size: 21px;
+}
+.sort a{
+ text-decoration: none;
+    color: black;
+ padding-left:33px;
+ font-size: 12px;   
+}
+.sort a:hover{
+    color:#81b3d2;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+.sort a:active{
 }
